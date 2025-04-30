@@ -26,27 +26,27 @@ This project trains a model using a CSV file and lets users ask questions to get
 
 ## 📁 Project Structure
 
-ml-fastapi-project/
-│
-├── backend/                           # FastAPI backend
-│   ├── main.py                        # Main FastAPI app
-│   ├── requirements.txt              # Python dependencies
-│   ├── trained_model.pkl             # Saved ML model after training
-│   └── __init__.py                   # (optional) Python package marker
-│
-├── frontend/                          # Next.js frontend
-│   ├── pages/                         # Frontend pages
-│   │   ├── upload.js                 # File upload page
-│   │   └── ask.js                    # Prediction input page
-│   ├── public/                       # Static files like favicon, images
-│   ├── styles/                       # CSS files (e.g., globals.css)
-│   ├── package.json                  # Node.js project metadata
-│   ├── next.config.js                # Next.js configuration
-│   └── ...                           # Other Next.js related files
-│
-├── .gitignore                         # Files and folders to ignore by Git
-├── README.md                          # Project description and usage guide
-└── LICENSE                            # (optional) License info
+- ml-fastapi-project/
+- │
+- ├── backend/                           # FastAPI backend
+- │   ├── main.py                        # Main FastAPI app
+- │   ├── requirements.txt              # Python dependencies
+- │   ├── trained_model.pkl             # Saved ML model after training
+- │   └── __init__.py                   # (optional) Python package marker
+- │
+- ├── frontend/                          # Next.js frontend
+- │   ├── pages/                         # Frontend pages
+- │   │   ├── upload.js                 # File upload page
+- │   │   └── ask.js                    # Prediction input page
+- │   ├── public/                       # Static files like favicon, images
+- │   ├── styles/                       # CSS files (e.g., globals.css)
+- │   ├── package.json                  # Node.js project metadata
+- │   ├── next.config.js                # Next.js configuration
+- │   └── ...                           # Other Next.js related files
+- │
+- ├── .gitignore                         # Files and folders to ignore by Git
+- ├── README.md                          # Project description and usage guide
+- └── LICENSE                            # (optional) License info
 
 
 ---
@@ -61,9 +61,8 @@ venv\Scripts\activate  # On Windows
 pip install fastapi uvicorn scikit-learn pandas python-multipart
 uvicorn main:app --reload
 
----
 
-## 🚀 Frontend (Next.js)
+### 🚀 Frontend (Next.js)
 
 ```bash
 cd frontend
@@ -71,7 +70,7 @@ npm install
 npm run dev
 ---
 
-Now visit:
+## Now visit:
 
 👉 http://localhost:3000/upload — to upload a CSV file
 
