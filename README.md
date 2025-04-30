@@ -72,21 +72,24 @@ npm install
 npm run dev
 
 
-🔗 Now visit:
-👉 http://localhost:3000/upload – to upload a CSV file
-👉 http://localhost:3000/ask – to make a prediction
+## 🔗 Web Interface
 
+- 🌼 **Upload CSV:** [http://localhost:3000/upload](http://localhost:3000/upload)  
+- 🌼 **Make Prediction:** [http://localhost:3000/ask](http://localhost:3000/ask)
 
+---
 
-🧪 API Endpoints
-POST /learn
-📤 Upload a CSV file to train the model.
-📌 Format: Last column should be the target label.
+## 🧪 API Endpoints
 
-GET /ask?q=val1,val2,...
-📥 Get prediction by passing comma-separated values as query string.
+### `POST /learn`
+- 📤 Upload a CSV file to train the model  
+- 📌 **Format:** Last column must be the target label (e.g., `species`)
 
-
+### `GET /ask?q=val1,val2,...`
+- 📥 Get prediction by passing comma-separated values as a query string  
+- 📌 **Example:**
+  ```http
+  GET /ask?q=5.1,3.5,1.4,0.2
 
 📂 Example CSV (flower_data.csv)
 ```bash
