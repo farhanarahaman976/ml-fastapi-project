@@ -48,6 +48,7 @@ This project trains a model using a CSV file and lets users ask questions to get
 - ├── README.md                          # Project description and usage guide
 - └── LICENSE                            # (optional) License info
 
+--- 
 
 # 🌸 ML FastAPI + Next.js Project
 
@@ -71,6 +72,7 @@ cd frontend
 npm install
 npm run dev
 
+---
 
 ## 🔗 Web Interface
 
