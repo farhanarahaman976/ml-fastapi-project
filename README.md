@@ -100,5 +100,5 @@ Deployment: GitHub
 
 ## 🧾 Author
 
-Farhana Rahman Adiba  
-GitHub: @farhanarahaman976
+**Farhana Rahman Adiba**  
+GitHub: [@farhanarahaman976](https://github.com/farhanarahaman976)
