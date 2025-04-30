@@ -49,64 +49,59 @@ This project trains a model using a CSV file and lets users ask questions to get
 - └── LICENSE                            # (optional) License info
 
 
----
+# 🌸 ML FastAPI + Next.js Project
 
-## ⚙️ Setup Instructions
+## 🔧 Setup Instructions
 
-### Backend (FastAPI)
+### ⚙️ Backend (FastAPI)
+
 ```bash
 cd backend
 python -m venv venv
-venv\Scripts\activate  # On Windows
-pip install fastapi uvicorn scikit-learn pandas python-multipart
+venv\Scripts\activate       # On Windows
+pip install -r requirements.txt
 uvicorn main:app --reload
 
 
-### 🚀 Frontend (Next.js)
+
+🚀 Frontend (Next.js)
 
 ```bash
 cd frontend
 npm install
 npm run dev
----
 
-## Now visit:
 
-👉 http://localhost:3000/upload — to upload a CSV file
+🔗 Now visit:
+👉 http://localhost:3000/upload – to upload a CSV file
+👉 http://localhost:3000/ask – to make a prediction
 
-👉 http://localhost:3000/ask — to make a prediction
 
----
 
-## 🧪 Endpoints
-🔹 POST /learn
-Upload a CSV file to train the model.
-
+🧪 API Endpoints
+POST /learn
+📤 Upload a CSV file to train the model.
 📌 Format: Last column should be the target label.
 
-🔹 GET /ask?q=val1,val2,...
-Get prediction by passing comma-separated values as query string.
+GET /ask?q=val1,val2,...
+📥 Get prediction by passing comma-separated values as query string.
 
----
 
-## 📷 Example CSV (flower_data.csv)
+
+📂 Example CSV (flower_data.csv)
+```bash
 sepal_length,sepal_width,petal_length,petal_width,species
 5.1,3.5,1.4,0.2,setosa
 6.2,2.9,4.3,1.3,versicolor
 6.3,3.3,6.0,2.5,virginica
 
----
-
-
-## 🛠 Tech Stack
+🛠 Tech Stack
 Backend: FastAPI, scikit-learn, pandas, pickle
 
 Frontend: Next.js, React
 
 Deployment: GitHub
 
----
-
-## 🧾 Author
+🧾 Author
 Farhana Rahman Adiba
 GitHub: @farhanarahaman976
